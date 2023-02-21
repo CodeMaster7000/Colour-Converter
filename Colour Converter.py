@@ -2,8 +2,8 @@ class colour_converter:
     def rgb_to_hex(red, green, blue): #Input RGB values.
         hex_value = 0
         hex_value = red*0x10000 + green*0x100 + blue
-        hex_str =  str('#' + hex(hex_value))
-        return hex_str.replace('0x', '')
+        hex_string =  str('#' + hex(hex_value))
+        return hex_string.replace('0x', '')
 
     def hex_to_rgb(hex_value): #Input HEX string.
         red = '0x' + hex_value[1:3] 
